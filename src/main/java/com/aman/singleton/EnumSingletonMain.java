@@ -1,6 +1,6 @@
-package com.aman;
+package com.aman.singleton;
 
-import com.aman.util.DateUtilEnumSingleton;
+import com.aman.singleton.util.DateUtilEnumSingleton;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

@@ -1,6 +1,6 @@
-package com.aman;
+package com.aman.singleton;
 
-import com.aman.util.DateUtilSingleton;
+import com.aman.singleton.util.DateUtilSingleton;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -42,9 +42,8 @@ public class DateUtilSingletonMain {
         }
 
         System.out.println(".".repeat(timestamps.size() * 3).concat("\n"));
-
-        boolean allSame = dateUtilList.stream().allMatch(instance -> instance == dateUtilList.getFirst());
+        boolean allSame = dateUtilList.stream().allMatch(instance -> instance == dateUtilList.get(0));
         System.out.println("Är alla 10 instanser samma? " + allSame);
-        System.out.println("Är den deserialiserade instansen samma? " + (dateUtilList.getFirst() == deserializedDateUtil));
+        System.out.println("Är den deserialiserade instansen samma? " + (dateUtilList.get(0) == deserializedDateUtil));
     }
 }

@@ -1,4 +1,4 @@
-package com.aman.factory;
+package com.aman.factory.Example1;
 
 public class ChickenPizza implements Pizza {
 
